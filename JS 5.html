@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="../../Imagens/IFRN.jpg" onMouseOut="mostrarNome()" ondblclick="avisoLink()">
+    <p><a href="https://portal.ifrn.edu.br/" >Oi </a></p>
+ 
+    <form action="">
+        <p>Nome: <input type="text" name="nome" onblur="reviseCampo()"></p>
+    </form>
+    <form action="">
+        <p>CPF: <input type="text" name="cpf" onchange="soNumeros()"></p>
+    </form>
+    <form action="">
+        <p>Data Nascimento: <input type="text" name="data" onselect="formatoData()"></p>
+    </form>
+    <form action="" onchange="duvidaSigla()">
+        <p>Campus:
+        <select name="tcampus">
+            <option value="cang">CANG</option>
+            <option value="par">PAR</option>
+            <option value="cnat">CNAT</option>
+            <option value="nc">NC</option>
+        </p>
+        </select>
+    </form>
+ 
+ 
+    <script text="text/javascript">
+        function mostrarNome(){
+            alert("Foto do Instituto Federal de Ciencias e Tecnologia do Campus Canguaretama");
+        }
+        function avisoLink(){
+            alert("O link para o portal do IFRN se encontra embaixo da imagem");
+        }
+        function reviseCampo(){
+            alert("Digitou o nome completo? Revise o campo antes de continuar!");
+        }
+        function soNumeros(){
+            alert("Lembre-se que o campo só aceita números!");
+        }
+        function formatoData(){
+            alert("Digite no formato dd/mm/aaaa");
+        }
+        function duvidaSigla(){
+            alert("Tem dúvidas em relação a sigla do Campus? Acesse o site do IFRN!");
+        }
+    </script>
+ 
+</body>
+</html>
